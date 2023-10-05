@@ -1,0 +1,23 @@
+#/bin/bash
+#PBS -q omp
+#PBS -l select=1:ncpus=8:mem=10g
+#PBS -l walltime=06:00:00
+#PBS -J 1-84
+#PBS -m n
+#PBS -N preparePublicSessions
+#PBS -S /bin/bash
+
+signal_handler() {
+	pkill --parent "${$}"
+}
+
+trap signal_handler EXIT
+cd /your/working/directory/path/on/datarmor
+
+. /appli/anaconda/latest/etc/profile.d/conda.sh
+conda activate /home/datawork-iot-nos/Seatizen/conda-env/jacques_cpu
+cd $PBS_O_WORKDIR
+
+python /your/working/directory/path/on/datarmor/folders_preparation.py --session-index $PBS_ARRAY_INDEX
+conda deactivate
+qstat -f $PBS_JOBID
