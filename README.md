@@ -6,21 +6,21 @@
 </div>
 </br>
 
-This repository contains a use case example for the [seatizen-to-zenodo](https://github.com/IRDG2OI/seatizen-to-zenodo) tool.
+This repository contains a datarmor use case example for the [seatizen-to-zenodo](https://github.com/IRDG2OI/seatizen-to-zenodo) tool.
 
-By following, in the same order, the configurations listed in the three folders you will:
+By using, in the same order, the configurations listed in the three folders with your own paths, you will:
 
 1. Make a copy of your sessions to another folder. <br/>
 :warning: Don't forget to complete the source and destination paths in the main() function of **copy_folders.py**!
 2. Create zipped files of folders located in each raw session for the restricted deposit.
-3. i. Prepare the public deposit with: <br/>
+3. i. (omp queue) Prepare the public deposit with: <br/>
 
     - Jacques classification
     - Deletion of folders BEFORE/AFTER/USELESS
-    - Folders zip from each session
+    - Creation of zipped files of folders located in each session
     - Creation of metadata_image.csv and metadata_image_stats.csv
 
-    ii. Create data previews: <br>
+    ii. (ftp queue) Create data previews: <br>
 
     - Creation of a map with all images location
     - Creation of PDF previews
