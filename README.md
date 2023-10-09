@@ -18,7 +18,7 @@ By using, in the same order, the configurations listed in the three folders with
     - Jacques classification
     - Deletion of folders BEFORE/AFTER/USELESS
     - Creation of zipped files of folders located in each session
-    - Creation of metadata_image.csv and metadata_image_stats.csv
+    - Creation of metadata_image.csv and metadata_image_stats.txt
 
     ii. (ftp queue) Create data previews: <br>
 
