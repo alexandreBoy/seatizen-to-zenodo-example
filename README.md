@@ -42,7 +42,6 @@ public_deposit
 │   └───DCIM.zip
 │   └───DCIM_THUMBNAILS.zip
 │   └───GPS.zip
-│   └───LABEL.zip
 │   └───METADATA.zip
 │
 restricted_deposit
